@@ -7,7 +7,7 @@ radio.onReceivedValue(function (name, value) {
     OMG_Tank.Set_Speed(Left_Speed, Right_Speed)
 })
 control.onEvent(EventBusSource.MICROBIT_ID_BUTTON_A, EventBusValue.MICROBIT_EVT_ANY, function () {
-    if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_B_DOWN) {
+    if (control.eventValue() == EventBusValue.MES_DPAD_BUTTON_A_DOWN) {
         basic.showLeds(`
             . . # . .
             . # # # .

@@ -1,5 +1,5 @@
 {
-    "name": "Tank_Rx",
+    "name": "Tank_Receiver",
     "description": "",
     "dependencies": {
         "core": "*",
