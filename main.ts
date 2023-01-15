@@ -3,23 +3,13 @@ radio.onReceivedValue(function (name, value) {
         Left_Speed = value
     } else if (name == "right") {
         Right_Speed = value
-    } else if (name == "pushedbutton" && value == parseFloat("14")) {
+    } else if (name == "pushedbutton") {
         basic.showLeds(`
             . . # . .
             . # # # .
             . . . . .
             . . . . .
             . . . . .
-            `)
-        basic.pause(1000)
-        basic.clearScreen()
-    } else if (name == "pushedbutton" && value == parseFloat("16")) {
-        basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . # # # .
-            . . # . .
             `)
         basic.pause(1000)
         basic.clearScreen()
