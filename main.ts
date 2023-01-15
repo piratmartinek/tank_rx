@@ -1,13 +1,48 @@
+radio.onReceivedNumber(function (receivedNumber) {
+    if (receivedNumber == 14) {
+        basic.showLeds(`
+            . . # . .
+            . # . # .
+            # . . . #
+            . . . . .
+            . # # # .
+            `)
+    }
+})
 radio.onReceivedValue(function (name, value) {
     if (name == "left") {
         Left_Speed = value
+        basic.showLeds(`
+            # . . . .
+            # . . . .
+            # . . . .
+            # . . . .
+            # . . . .
+            `)
     } else if (name == "right") {
         Right_Speed = value
+        basic.showLeds(`
+            . . . . #
+            . . . . #
+            . . . . #
+            . . . . #
+            . . . . #
+            `)
     } else if (name == "pushedbutton") {
         basic.showLeds(`
             . . # . .
             . # # # .
             . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.pause(1000)
+        basic.clearScreen()
+    } else if (value == 14) {
+        basic.showLeds(`
+            . . # . .
+            . # . # .
+            # . . . #
             . . . . .
             . . . . .
             `)
