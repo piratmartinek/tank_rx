@@ -23,8 +23,6 @@ radio.onReceivedValue(function (name, value) {
             `)
         basic.pause(1000)
         basic.clearScreen()
-    } else {
-    	
     }
     OMG_Tank.Set_Speed(Left_Speed, Right_Speed)
 })
