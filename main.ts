@@ -19,6 +19,8 @@ radio.onReceivedValue(function (name, value) {
             # . . . .
             # . . . .
             `)
+        basic.pause(1000)
+        basic.clearScreen()
     } else if (name == "right") {
         Right_Speed = value
         basic.showLeds(`
@@ -28,6 +30,8 @@ radio.onReceivedValue(function (name, value) {
             . . . . #
             . . . . #
             `)
+        basic.pause(1000)
+        basic.clearScreen()
     } else if (name == "pushedbutton") {
         basic.showLeds(`
             . . # . .
